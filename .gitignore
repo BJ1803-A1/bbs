@@ -104,7 +104,7 @@ venv.bak/
 .mypy_cache/
 *.pyc
 *.sqlite3
-.idea
+.idea/
 __pycache__
 *.log
 .venv
