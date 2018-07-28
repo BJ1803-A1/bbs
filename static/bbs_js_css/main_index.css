@@ -1,0 +1,16 @@
+
+#header{
+    margin-top: 5px;
+    margin: 5px 10%;
+    background-color: #fff;
+
+    width: 80%;
+    height: 30%;
+    position: absolute;
+
+}
+
+#header img{
+    height: 100%;
+    width: 100%;
+}
