@@ -96,7 +96,7 @@
     border-bottom: 1px dashed #31b0d5;
     background: white;
     text-align:center;
-    padding-bottom: 1px;
+    padding-top: 10px;
 }
 #card_content > #card_user > #user_name > p{
     font-size: 18px;
@@ -109,13 +109,16 @@
     text-align:center
 }
 #card_content > #card_user > #update_time > p{
+
     font-size: 14px;
     text-align:center
 }
 
-#card_content > #card_massage > #card_title{
+#card_content > #card_massage  #card_title{
+
     border-bottom: 1px dashed #31b0d5;
-    height: 40%;
+    height: 50%;
+
 }
 
 #card_content > #card_massage > #card_kaitou{
@@ -124,12 +127,25 @@
 }
 
 
-#card_content > #card_massage  p{
+#card_content > #card_massage > #card_kaitou{
 
-    font-size: 16px;
+    font-size: 14px;
 }
 
-
+#footer{
+    width: 80%;
+    height: auto;
+    /*position: relative;*/
+    /*top: 30%;*/
+    margin-left:10%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#footer p{
+    /*margin-top: 15px;*/
+    font-size: 14px;
+}
 
 ul, li, ol {
     list-style: none;

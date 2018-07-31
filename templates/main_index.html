@@ -94,10 +94,11 @@
                             <div id="card_massage" style="border: 2px dashed #67b168">
 
                                 <div id="card_title">
-                                    <p>{{ card.card_title }}</p>
+                                    <a href="{% url 'bbs:card_content' card.id %}"><p>{{ card.card_title }}</p></a>
                                 </div>
                                 <div id="card_kaitou">
-                                    <p>{{ card.card_content }}</p>
+                                    {# 这是在截取字符串 #}
+                                <a href="{% url 'bbs:card_content' card.id %}"><p>{{ card.card_content|truncatechars:40 }}</p></a>
                                 </div>
 
                             </div>
@@ -109,5 +110,10 @@
 
         </div>
 
+    </div>
+{% endblock %}
+{% block footer %}
+    <div id="footer">
+        <p>©2018版权所有 足球论—Football论坛 | 京ICP证 XXXXX号</p>
     </div>
 {% endblock %}

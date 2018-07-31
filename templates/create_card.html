@@ -1,34 +1,12 @@
-{% extends 'base.html' %}
+{% extends 'base_title.html' %}
 
 {% load static %}
 
 {% block extCSS %}
     {{ block.super }}
-    <link rel="stylesheet" href="{% static 'bbs_js_css/main_index.css' %}">
+    <link rel="stylesheet" href="{% static 'bbs_js_css/card_content.css' %}">
     <link rel="stylesheet" href="{% static 'bbs_js_css/create_card.css' %}">
 
-{% endblock %}
-
-{% block header %}
-    {# 网站图标   #}
-    <div id="football">
-
-        <a href="{% url 'bbs:index' %}"><img src="{% static 'image/football.png' %}" alt="网站图标"></a>
-        <font id="f1">足球论</font>
-        <font id="f2">—football论坛</font>
-
-        {#        该部分要设置为动态的显示#}
-        <div id="login">
-            <a href="#">登录</a>
-            <font>/</font>
-            <a href="#">用户注册</a>
-        </div>
-
-    </div>
-
-    <div id="header">
-        <img src="{% static 'image/background.jpg' %}" alt="背景图片">
-    </div>
 {% endblock %}
 
 {% block content %}
@@ -70,7 +48,4 @@
         </form>
 
     </div>
-
-
-
 {% endblock %}

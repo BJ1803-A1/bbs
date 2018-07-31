@@ -28,3 +28,16 @@ def create_card(request):
     else :
 
         return render(request, 'create_card.html',)
+
+
+def card_content(request,id):
+    # card_id = request.GET.get(id)
+    title = Card.objects.filter(id=id)[0].card_title
+    content = Card.objects.filter(id=id)[0].card_content
+    time = Card.objects.filter(id=id)[0].card_create_time
+    data ={
+        'card_title' : title,
+        'card_content' : content,
+        'card_time' : time
+    }
+    return render(request, 'card_content.html', context=data)

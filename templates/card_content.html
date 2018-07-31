@@ -1,0 +1,17 @@
+{% extends 'base_title.html' %}
+
+{% load static %}
+
+{% block extCSS %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'bbs_js_css/card_content.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div id="CardContent">
+        <p id="title"><font id="t1">{{ card_title }}</font>&nbsp&nbsp&nbsp&nbsp<font id="t2">发表时间：{{ card_time }}</font></p>
+        <hr/>
+        <p ><font id="c">&nbsp&nbsp&nbsp&nbsp{{ card_content }}</font></p>
+    </div>
+
+{% endblock %}
